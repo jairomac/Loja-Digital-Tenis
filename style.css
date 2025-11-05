@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --corDestaque: #c92071;
+    --corBranca:#FFF;
+    --corGradientePrimaria: #b5b6f2;
+    --corGradienteSecundria: #efefff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter' , sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    div {
+       width: 11.125rem; height: 4rem; 
+       margin: 0 auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: .2725rem;
+
+       span {
+        font-size: 1.2406rem;
+        font-weight: 600;
+        color: var(--cor-destaque);
+
+       }
+    }
+}
+
+main {
+padding: 3.9375rem 0 5rem;
+    background: linear-gradient(
+        var(--corGradientePrimaria), 
+        var(--corGradienteSecundria)
+        );
+
+    form {
+        
+        width: 19.6875rem; height: 35.75rem;
+        height: 35.75rem;
+        margin: 0 auto;
+        background-color: var(--corBranca) ;
+    }
+}
