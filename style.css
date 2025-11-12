@@ -2,51 +2,76 @@
 
 :root {
     --corDestaque: #c92071;
-    --corBranca:#FFF;
+    --corBranca: #FFF;
     --corGradientePrimaria: #b5b6f2;
     --corGradienteSecundria: #efefff;
+    --cortitulo: #1f1f1f;
+    --corParagrafo: #474747
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'inter' , sans-serif;
+    font-family: 'inter', sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
 header {
     div {
-       width: 11.125rem; height: 4rem; 
-       margin: 0 auto;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       gap: .2725rem;
+        width: 11.125rem;
+        height: 4rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .2725rem;
 
-       span {
-        font-size: 1.2406rem;
-        font-weight: 600;
-        color: var(--cor-destaque);
+        span {
+            font-size: 1.2406rem;
+            font-weight: 600;
+            color: var(--corDestaque);
 
-       }
+        }
     }
 }
 
 main {
-padding: 3.9375rem 0 5rem;
+    padding: 3.9375rem 0 5rem;
     background: linear-gradient(
-        var(--corGradientePrimaria), 
-        var(--corGradienteSecundria)
-        );
+         var(--corGradientePrimaria),
+         var(--corGradienteSecundria));
 
     form {
-        
-        width: 19.6875rem; height: 35.75rem;
+
+        width: 19.6875rem;
+        height: 35.75rem;
         height: 35.75rem;
         margin: 0 auto;
-        background-color: var(--corBranca) ;
+        background-color: var(--corBranca);
+        padding: 1.875rem;
+        color: var(--corParagrafo);
+        
+        .titulo {
+
+            h1 {
+                font-size: 1.375rem;
+                letter-spacing: .125rem;
+                text-align: center;
+                color: var(--cortitulo);
+                line-height: 2.125rem;
+                
+            }
+
+            p {
+                font-size: .875rem;
+                letter-spacing: .0156rem;
+                text-align: center;
+            }
+        }
     }
 }
